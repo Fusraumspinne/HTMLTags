@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="InfoHA.css">
+</head>
+<body>
+
+        <header>
+            <h1>Wie funktioniert ein Pc?</h1>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#joinTitle" class="join">Join the Club</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Pc">Pc's</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <br><br>
+            <h3>Mainboard:</h3> <br>
+            1. Komponentenanschlüsse,  die sorgen dafür das man verschiedene Komponenten anschließen kann wie die CPU, Ram, Grafikkarte, Festplatten, Lüfter usw. <br>
+            2.CPU-Sockel, ist der Ort wo die Hauptkomponente die CPU installiert wird. <br>
+            3.Ramsteckplätze, dort werden die Ramriegel eingesteckt (häufig steckt man sie in den ersten und dritten oder zweiten und vierten steckt was für mehr Geschwindigkeit) <br>
+            4.Chipsatz, welcher die Kommunikation zwischen den einzelnen Komponenten koordiniert. <br>
+            5.Closck-Generator, welcher die Componenten synchronisierd. <br>
+            6.Am ende wird sogut wie alles auf dem mainbiard moniert 
+            <br><br>
+            <h3>CPU:</h3> <br>
+            1.CPU interpretiert und führt eine Abfolge von Befehlen aus, die in maschienenlesbarer Form vorligen. <br>
+            2.CPU greift auf ram und seinen cache zu. <br>
+            3.CPUs haben mehrere Kerne welche die Leistung verbessern.
+            <br><br>
+            <h3>Ram:</h3> <br>
+            1.Ram ist ein kurzfristiger Speicher um schnellen zugriff an daten von laufenden Programmen zuermöglichen.
+            <br><br>
+            <h3>GPU:</h3> <br>
+            1.GPU sorgt für die Bildverarbeitung und berchnet die grafik.
+            <br id="Pc"><br>
+            <h3>PSU:</h3> <br>
+            1.PSU sorgt für die stromversorgung für alle komponeten
+            <br><br>
+            <h3>SSD/HDD:</h3> <br>
+            1.SSD/HDD sind festplatten wo die hdd mit einer rotierenden magnetischen scheibe läuft was umeiniges langsamer ist als eine ssd
+        
+    </div>
+
+    <div class="Empfehlungen">
+         <h1>Sie wollen einen neuen Pc?</h1> <br>
+            <h3>Hier sind unsere Top-Empfehlungen</h3> <br>
+
+                <a href="Empfehlungen.html">Klick hier</a>
+    </div>
+
+    <section class="joinText">
+        <Section id="joinTitle" class="joinTitle">
+            <h2>Join Today!</h2>
+        </Section>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quibusdam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, aut.
+        </p>
+
+        <section class="join">
+            <form id="formContainer" action="">
+                <div id="loginForm">
+                        <form id="loginForm" action="">
+                            <label for="username">Enter username:</label>
+                            <input type="text" id="username" name="username" placeholder="Fusraumspinne" required>
+                            <br><br>
+                            <label for="password">Enter password:</label>
+                            <input type="password" id="password" name="password" placeholder="password" required>
+                
+                            <br><br>
+                
+                            <input class="Submit" type="submit" value="Login" required>
+                
+                            <p class="Question">You don't have a account? <a href="" id="signupLink">Sign up</a></p>
+                        </form>
+                </div>
+                <div id="signupForm" style="display: none;">
+                    <form action="">
+                        <label for="email">Enter e-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="example123@gmail.com" required>
+                        <br><br>
+                        <label for="username">Enter username:</label>
+                        <input type="text" id="username" name="username" placeholder="Fusraumspinne" required>   
+                        <br><br>
+                        <label for="password">Enter password:</label>
+                        <input type="password" id="password" name="password" placeholder="password" required>     
+                
+                        <br><br>
+                
+                        <input class="Submit" type="submit" value="Sign Up" required>
+            
+                        <p class="Question">You have already a acount? <a href="" id="loginLink">Login</a></p> 
+                    </form>
+                </div>
+            </form>
+        </section>
+    </section>
+    <footer>
+        <p class="copyright">Copyright 2023 Progamming Club</p>
+    </footer>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const signupForm = document.getElementById("signupForm");
+        const signupLink = document.getElementById("signupLink");
+        const loginLink = document.getElementById("loginLink");
+
+        signupLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            loginForm.style.display = "none";
+            signupForm.style.display = "block";
+        });
+
+        loginLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            signupForm.style.display = "none";
+            loginForm.style.display = "block";
+        });
+    </script>
+</body>
+</html>

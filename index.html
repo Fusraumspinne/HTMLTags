@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.alert("Ihr Computer has Virus");
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Home</h1>
+    </header>
+
+    <section class="banner">
+        <img src="Bilder/Screenshot 2023-08-05 123723.png" alt="marioclub welcome banner">
+        <div class="welcome">
+            <h2>Welcome to <br> <span>Programming Club</span></h2>
+        </div>
+    </section>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#joinTitle" class="join">Join the Club</a></li>
+            <li><a href="InfoHA.html">Informatik-Hausaufgaben</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2 class="ArtikelTitel">About us</h2>
+            <p class="Artikel">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est minima velit laudantium iste eius magnam eos molestiae sequi excepturi explicabo dolores nihil blanditiis asperiores, veniam nobis! Animi temporibus, corporis est qui quis quibusdam maxime, quisquam quam odit dolore libero, rerum sint asperiores. Dolorem magni ipsam vel quae doloremque mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ad aliquam tempore numquam dolorem saepe alias veniam, animi totam quod dicta quo quae temporibus. Nostrum perferendis placeat quos incidunt dignissimos similique, animi, enim magni sequi illum dolor provident quibusdam obcaecati maiores sit labore iusto cum cupiditate nobis quis ab? Debitis quia reprehenderit dolor porro earum nobis minus rerum aliquam culpa temporibus quod at accusamus mollitia similique, voluptates laboriosam provident voluptatibus? Necessitatibus fugit, officia a provident incidunt nisi, explicabo quis asperiores facere doloribus animi rem laudantium, reiciendis quam labore nobis est hic. Tenetur, ratione nemo eligendi repellat atque eum saepe sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni ducimus iure molestiae quisquam ullam natus illo sequi libero hic iste aperiam quasi dolores repellendus placeat quis, saepe soluta animi doloribus laborum voluptatem sint voluptas non, vero eos. Maiores tempora suscipit, ut soluta molestiae cumque facere quaerat ab, error iste eos vitae molestias dolores accusantium minima qui assumenda nisi ipsam odio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cumque tenetur itaque amet beatae perferendis mollitia praesentium sequi cupiditate distinctio sint voluptatum magni laudantium, adipisci, eveniet sed? Deserunt architecto tempore nobis quo maxime nemo corporis repudiandae nisi impedit officia enim explicabo aut ullam officiis aliquid, debitis magnam tempora. Culpa enim ab ipsum dignissimos minus voluptas exercitationem nam aliquam quibusdam asperiores.
+            </p>
+        </article>
+        <ul class="images">
+            <li><img src="Bilder/Screenshot 2023-08-05 125011.png" alt=""></li>
+            <li><img src="Bilder/Screenshot 2023-08-05 125025.png" alt=""></li>
+        </ul>
+    </main>
+    <section class="joinText">
+        <Section id="joinTitle" class="joinTitle">
+            <h2>Join Today!</h2>
+        </Section>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quibusdam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, aut.
+        </p>
+
+        <section class="join">
+            <form id="formContainer" action="">
+                <div id="loginForm">
+                        <form id="loginForm" action="">
+                            <label for="username">Enter username:</label>
+                            <input type="text" id="username" name="username" placeholder="Fusraumspinne" required>
+                            <br><br>
+                            <label for="password">Enter password:</label>
+                            <input type="password" id="password" name="password" placeholder="password" required>
+                
+                            <br><br>
+                
+                            <input class="Submit" type="submit" value="Login" required>
+                
+                            <p class="Question">You don't have a account? <a href="" id="signupLink">Sign up</a></p>
+                        </form>
+                </div>
+                <div id="signupForm" style="display: none;">
+                    <form action="">
+                        <label for="email">Enter e-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="example123@gmail.com" required>
+                        <br><br>
+                        <label for="username">Enter username:</label>
+                        <input type="text" id="username" name="username" placeholder="Fusraumspinne" required>   
+                        <br><br>
+                        <label for="password">Enter password:</label>
+                        <input type="password" id="password" name="password" placeholder="password" required>     
+                
+                        <br><br>
+                
+                        <input class="Submit" type="submit" value="Sign Up" required>
+            
+                        <p class="Question">You have already a acount? <a href="" id="loginLink">Login</a></p> 
+                    </form>
+                </div>
+            </form>
+        </section>
+    </section>
+    <footer>
+        <p class="copyright">Copyright 2023 Progamming Club</p>
+    </footer>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const signupForm = document.getElementById("signupForm");
+        const signupLink = document.getElementById("signupLink");
+        const loginLink = document.getElementById("loginLink");
+
+        signupLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            loginForm.style.display = "none";
+            signupForm.style.display = "block";
+        });
+
+        loginLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            signupForm.style.display = "none";
+            loginForm.style.display = "block";
+        });
+    </script>
+</body>
+</html>
